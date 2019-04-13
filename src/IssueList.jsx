@@ -88,6 +88,11 @@ export default class IssueList extends React.Component {
     this.loadData();
   }
 
+  setFilter(query) {
+    this.props.router.push({ pathname: this.props.location.pathname, query });
+    console.log('setFilter firing with', query);
+  }
+
   loadData() {
     fetch(`/api/issues${this.props.location.search}`).then(response => {
       if (response.ok) {

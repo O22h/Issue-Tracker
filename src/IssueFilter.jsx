@@ -56,11 +56,6 @@ export default class IssueFilter extends React.Component {
     }
   }
 
-  setFilter(query) {
-    this.props.router.push({ pathname: this.props.location.pathname, query });
-    console.log('setFilter firing with', query);
-  }
-
   applyFilter() {
     const newFilter = {};
 
