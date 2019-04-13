@@ -6,7 +6,7 @@ const validIssueStatus = {
   Assigned: true,
   Fixed: true,
   Verified: true,
-  Closed: true,
+  Closed: true
 };
 
 const issueFieldType = {
@@ -15,7 +15,7 @@ const issueFieldType = {
   effort: 'optional',
   created: 'required',
   completionDate: 'optional',
-  title: 'required',
+  title: 'required'
 };
 
 function validateIssue(issue) {

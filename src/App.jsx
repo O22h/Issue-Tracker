@@ -1,8 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, HashRouter, Route, Switch, Redirect } from 'react-router-dom';
+
 import IssueList from './IssueList';
+import IssueEdit from './IssueEdit';
 
 const contentNode = document.getElementById('contents');
+const NoMatch = () => <p>Page Not Found</p>;
+
+const RoutedApp = () => (
+  <HashRouter>
+    <Switch>
+      <Redirect exact from="/" to="/issues" />
+      {/*<Route exact path="/" component={IssueList} />*/}
+      <Route exact path="/issues" component={IssueList} />
+      <Route exact path="/issues/:id" component={IssueEdit} />
+      {/*<Route exact path="/issueEdit" component={IssueEdit} />*/}
+      <Route exact path="*" component={NoMatch} />
+    </Switch>
+  </HashRouter>
+);
+
 
 // class IssueFilter extends React.Component {
 //     render() {
@@ -207,7 +225,7 @@ const contentNode = document.getElementById('contents');
 //     }
 // }
 
-ReactDOM.render(<IssueList />, contentNode);
+ReactDOM.render(<RoutedApp />, contentNode);
 
 if (module.hot) {
   module.hot.accept();
