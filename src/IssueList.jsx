@@ -55,15 +55,7 @@ export default class IssueList extends React.Component {
     // this.state = { issues: [] };
     this.state = {issues: [],query: {}};
     this.createIssue = this.createIssue.bind(this);
-  }
-
-  static getDerivedStateFromProps(props){
-    const query = {};
-    props.location.search.substring(1).split("&").forEach( key_value => {
-      let [key,value] = key_value.split("="); query[key] = value;
-    });
-    console.log('query is', query);
-    return {query}; // Same as return {query: query}
+    this.setFilter = this.setFilter.bind(this);
   }
 
   componentDidMount() {
@@ -79,16 +71,25 @@ export default class IssueList extends React.Component {
     const oldQuery = prevProps.location.search;
     const newQuery = this.props.location.search;
     // might be here is problem
-    if (
-      oldQuery === newQuery
-      && oldQuery.effort_gte === newQuery.effort_gte
-      && oldQuery.effort_lte === newQuery.effort_lte) {
+    if (oldQuery === newQuery) {
       return;
     }
     this.loadData();
   }
 
+  static getDerivedStateFromProps(props){
+    console.log('getDerivedState firing');
+    const query = {};
+    props.location.search.substring(1).split("&").forEach( key_value => {
+      let [key,value] = key_value.split("="); query[key] = value;
+    });
+    console.log('query is', query);
+    return {query}; // Same as return {query: query}
+  }
+
   setFilter(query) {
+
+    console.log('setFilter firing with', query);
 
     const search = Object.entries(query).map(field_value = field_value.join("=")).join("&");
     const location = {
@@ -98,7 +99,6 @@ export default class IssueList extends React.Component {
 
     this.props.history.push(location);
 
-    console.log('setFilter firing');
   }
 
   loadData() {

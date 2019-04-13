@@ -100,8 +100,8 @@
       <file leaf-file-name="IssueFilter.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IssueFilter.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="36" />
+            <state relative-caret-position="173">
+              <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -112,8 +112,8 @@
       <file leaf-file-name="IssueList.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/IssueList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="92" column="53" lean-forward="false" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
+            <state relative-caret-position="195">
+              <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -158,6 +158,8 @@
       <find>this.props</find>
       <find>classProp</find>
       <find>setFilter</find>
+      <find>apply</find>
+      <find>location</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -600,12 +602,12 @@
       <workItem from="1554152082733" duration="437000" />
       <workItem from="1554746575347" duration="954000" />
       <workItem from="1554754143947" duration="210000" />
-      <workItem from="1555111083532" duration="10616000" />
+      <workItem from="1555111083532" duration="14523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130719000" />
+    <option name="totallyTimeSpent" value="134626000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -980,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IssueFilter.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="36" />
+        <state relative-caret-position="173">
+          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -990,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IssueList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="92" column="53" lean-forward="false" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
+        <state relative-caret-position="195">
+          <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>

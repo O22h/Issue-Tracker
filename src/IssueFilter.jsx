@@ -60,10 +60,12 @@ export default class IssueFilter extends React.Component {
     const newFilter = {};
 
     if (this.state.status) newFilter.status = this.state.status;
-    if (this.state.effort_gte) newFilter.efforort_gte = this.state.effort_gte;
+    if (this.state.effort_gte) newFilter.effort_gte = this.state.effort_gte;
     if (this.state.effort_lte) newFilter.effort_lte = this.state.effort_lte;
     console.log('apply filter is firing and newFilter is', newFilter);
+
     this.props.setFilter(newFilter);
+
   }
 
   clearFilter() {
