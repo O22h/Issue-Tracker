@@ -89,8 +89,16 @@ export default class IssueList extends React.Component {
   }
 
   setFilter(query) {
-    this.props.router.push({ pathname: this.props.location.pathname, query });
-    console.log('setFilter firing with', query);
+
+    const search = Object.entries(query).map( field_value = field_value.join("=")).join("&");
+    const location = {
+      pathname: this.props.location.pathname,
+      search: search
+    };
+
+    this.props.history.push(location);
+
+    console.log('setFilter firing');
   }
 
   loadData() {
