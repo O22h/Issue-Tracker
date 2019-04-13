@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="faa3186a-a3d8-4dfb-93bb-da98ee84afad" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IssueFilter.jsx" afterPath="$PROJECT_DIR$/src/IssueFilter.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IssueList.jsx" afterPath="$PROJECT_DIR$/src/IssueList.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -99,8 +100,8 @@
       <file leaf-file-name="IssueFilter.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IssueFilter.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="56" column="3" lean-forward="false" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
+            <state relative-caret-position="180">
+              <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="36" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -111,8 +112,8 @@
       <file leaf-file-name="IssueList.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/IssueList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="99" column="4" lean-forward="true" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+            <state relative-caret-position="290">
+              <caret line="92" column="53" lean-forward="false" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -599,12 +600,12 @@
       <workItem from="1554152082733" duration="437000" />
       <workItem from="1554746575347" duration="954000" />
       <workItem from="1554754143947" duration="210000" />
-      <workItem from="1555111083532" duration="10199000" />
+      <workItem from="1555111083532" duration="10616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130302000" />
+    <option name="totallyTimeSpent" value="130719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -979,8 +980,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IssueFilter.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="56" column="3" lean-forward="false" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
+        <state relative-caret-position="180">
+          <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="36" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -989,8 +990,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IssueList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="99" column="4" lean-forward="true" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+        <state relative-caret-position="290">
+          <caret line="92" column="53" lean-forward="false" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>

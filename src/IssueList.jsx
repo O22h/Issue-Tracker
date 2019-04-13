@@ -90,7 +90,7 @@ export default class IssueList extends React.Component {
 
   setFilter(query) {
 
-    const search = Object.entries(query).map( field_value = field_value.join("=")).join("&");
+    const search = Object.entries(query).map(field_value = field_value.join("=")).join("&");
     const location = {
       pathname: this.props.location.pathname,
       search: search
