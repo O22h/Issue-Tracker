@@ -73,7 +73,7 @@ export default class IssueFilter extends React.Component {
   }
 
   render() {
-    const Separator = () => <span> | </span>;
+    // const Separator = () => <span> | </span>;
     return (
       <div>
         Status:

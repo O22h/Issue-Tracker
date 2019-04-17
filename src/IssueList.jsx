@@ -70,7 +70,6 @@ export default class IssueList extends React.Component {
 
     const oldQuery = prevProps.location.search;
     const newQuery = this.props.location.search;
-    // might be here is problem
     if (oldQuery === newQuery) {
       return;
     }
@@ -91,7 +90,7 @@ export default class IssueList extends React.Component {
 
     console.log('setFilter firing with', query);
 
-    const search = Object.entries(query).map(field_value = field_value.join("=")).join("&");
+    const search = Object.entries(query).map(field_value => field_value.join("=")).join("&");
     const location = {
       pathname: this.props.location.pathname,
       search: search
