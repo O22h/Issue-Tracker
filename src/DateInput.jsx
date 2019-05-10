@@ -21,11 +21,13 @@ export default class DateInput extends React.Component {
     }
   }
 
-  onFocus(e) {
+  onFocus() {
+    console.log('onFocus firing');
     this.setState({ focused: true });
   }
 
   onBlur(e) {
+    console.log('onBlur firing');
     const value = this.unformat(this.state.value);
     const valid = this.state.value === '' || value != null;
     if (valid !== this.state.valid && this.props.onValidityChange) {
@@ -36,40 +38,44 @@ export default class DateInput extends React.Component {
   }
 
   onChange(e) {
-    if (e.target.value.match(/^\d*$/)) {
+    console.log('onChange firing');
+    if (e.target.value.match(/^[\d-]*$/)) {
       this.setState ({ value: e.target.value });
     }
   }
 
   displayFormat(date) {
-    // return (date != null) ? date.toDateString() : '';
-    return (date != null) ? date : '';
+    return (date != null) ? date.toDateString() : '';
   }
 
   editFormat(date) {
-    console.log('date =', date);
-    // return (date != null) ? date.toISOString().substr(0, 10) : '';
-    return (date != null) ? date : '';
+    return (date != null) ? date.toISOString().substr(0, 10) : '';
   }
 
-  unformat (str) {
+  unformat(str) {
     const val = new Date(str);
+    console.log('str is', str);
+    console.log('date is', val);
     return isNaN(val.getTime()) ? null : val;
   }
 
   render () {
     const className = (!this.state.valid && !this.state.focused) ? 'invalid' : null;
-    const value = (this.state.focus || !this.state.valid) ? this.state.value : this.displayFormat(this.props.value);
+    const value = (this.state.focused || !this.state.valid) ? this.state.value : this.displayFormat(this.props.value);
     return (
       <input
-        type="text" size={20} name={this.props.name} className={className}
+        type="text"
+        size={20}
+        name={this.props.name}
+        className={className}
         value={value}
-        placeholder={this.state.focused ? yyyy-mm-dd : null}
+        placeholder={this.state.focused ? 'yyyy-mm-dd' : null}
         onFocus={this.onFocus} onBlur={this.onBlur} onChange={this.onChange}
       />
     );
   }
 }
+
 DateInput.propTypes = {
   value: PropTypes.object,
   onChange: PropTypes.func.isRequired,

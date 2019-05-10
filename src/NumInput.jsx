@@ -15,6 +15,7 @@ export default class NumInput extends React.Component {
   }
 
   onBlur (e) {
+    console.log('NumInput onBlur firing');
     this.props.onChange(e, this.unformat(this.state.value));
   }
 
@@ -29,7 +30,10 @@ export default class NumInput extends React.Component {
   }
 
   unformat (str) {
+    console.log('unformat firing');
     const val = parseInt(str, 10);
+
+    console.log('unformat firing with original val =', val);
     return isNaN(val) ? null : val;
   }
 

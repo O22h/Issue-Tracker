@@ -129,8 +129,9 @@ export default class IssueEdit extends React.Component {
   }
 
   onChange(event, convertedValue) {
+    console.log('convertedValue in onChange is', convertedValue);
     const issue = Object.assign({}, this.state.issue);
-    const value = (convertedValue !== undefind) ? convertedValue : event.target.value;
+    const value = (convertedValue !== undefined) ? convertedValue : event.target.value;
     issue[event.target.name] = value;
     this.setState({ issue });
   }
@@ -151,8 +152,7 @@ export default class IssueEdit extends React.Component {
         response.json().then(issue => {
           issue.created = new Date(issue.created).toDateString();
           issue.completionDate = issue.completionDate != null ?
-            new Date(issue.completionDate).toDateString() : null;
-          // issue.effort = issue.effort != null ? issue.effort.toString() : '';
+            new Date(issue.completionDate) : null;
           this.setState({ issue });
         });
       } else {
