@@ -33,7 +33,7 @@ export default class NumInput extends React.Component {
     console.log('unformat firing');
     const val = parseInt(str, 10);
 
-    console.log('unformat firing with original val =', val);
+    console.log('unformat firing with val =', val);
     return isNaN(val) ? null : val;
   }
 
