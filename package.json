@@ -1,7 +1,7 @@
 {
-  "name": "pro-mern-stack",
+  "name": "issue-tracking-app",
   "version": "1.0.0",
-  "description": "first app",
+  "description": "Issue Tracker",
   "main": "index.js",
   "private": true,
   "scripts": {
